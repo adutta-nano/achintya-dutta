@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achintya Dutta</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fafafa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #eee;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .contact-links a:hover {
+            color: #2980b9;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            font-size: 1.8em;
+            font-weight: 400;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+
+        .education-item, .experience-item {
+            margin-bottom: 35px;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .position {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+
+        .institution {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        .date {
+            color: #95a5a6;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .description {
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .research-points {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .research-points li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .research-points li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .publications {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .publication {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 3px solid #3498db;
+            background: #f8f9fa;
+        }
+
+        .publication:last-child {
+            margin-bottom: 0;
+        }
+
+        .pub-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .pub-journal {
+            color: #e74c3c;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .skill-list {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .awards {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .award {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 3px solid #27ae60;
+            background: #f8f9fa;
+        }
+
+        .award:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .contact-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .item-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Achintya Dutta</h1>
+            <div class="subtitle">
+                Erasmus Mundus Scholar • J N Tata Fellow<br>
+                Mesoscopic Physics • 2D Materials • Ultrafast Microscopy
+            </div>
+            <div class="contact-links">
+                <a href="mailto:achintya.dutta@student.kuleuven.be">Email</a>
+                <a href="#" target="_blank">Google Scholar</a>
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Current Research</h2>
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="position">Master's Thesis • Ultrafast Microscopy Lab</div>
+                        <div class="institution">TU Dresden, Germany • Prof. Alexey Chernikov</div>
+                    </div>
+                    <div class="date">Nov 2024 - Present</div>
+                </div>
+                <div class="description">
+                    <strong>Hyperspatial Second-Harmonic Microscopy of Strain Fields in 2D Semiconductors</strong>
+                    <ul class="research-points">
+                        <li>Combining angle-resolved second-harmonic generation (SHG) and photoluminescence (PL) to map spatially modulated strain tensors in monolayer TMDs</li>
+                        <li>Investigating the effect of strain on optical selection rules for excitons and studying temperature dependence of strain fields</li>
+                        <li>Characterizing formation of strain vortices and quasi-1D excitonic waveguides</li>
+                        <li>Performing numerical simulations of exciton diffusion in strain-induced energy landscapes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="position">M.S. in Nanoscience (Erasmus Mundus)</div>
+                        <div class="institution">KU Leuven, Belgium & TU Dresden, Germany</div>
+                    </div>
+                    <div class="date">2023 - Present</div>
+                </div>
+                <div class="description">
+                    GPA: 87.79/100 (summa cum laude) • Full scholarship recipient
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="position">B.Tech. Electronics & Communication Engineering</div>
+                        <div class="institution">Manipal Institute of Technology, India</div>
+                    </div>
+                    <div class="date">2018 - 2022</div>
+                </div>
+                <div class="description">
+                    GPA: 8.45/10.0 • Minor in Material Science<br>
+                    Thesis: "Bilayer Vanadium Dioxide Thin Films with a Self-Buffer for Elevated Transition Temperatures"
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Research Experience</h2>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="position">Joint Research Intern</div>
+                        <div class="institution">Intel Components Research Oregon & IMEC Leuven</div>
+                    </div>
+                    <div class="date">Jul - Oct 2024</div>
+                </div>
+                <div class="description">
+                    <strong>Modeling Stress in Complementary FETs (CFETs)</strong>
+                    <ul class="research-points">
+                        <li>Simulated CFET process flows to track propagation of channel stress in stacked NMOS and PMOS nanoribbons</li>
+                        <li>Combined TCAD device simulations with stress models to study effect of source-drain geometry on electron/hole mobility</li>
+                        <li>Calculated transfer characteristics of strain-engineered CFET devices</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="position">Project Researcher</div>
+                        <div class="institution">Nanoelectronics Lab, TIFR • Prof. Mandar M. Deshmukh</div>
+                    </div>
+                    <div class="date">Aug 2022 - Jul 2023</div>
+                </div>
+                <div class="description">
+                    <strong>Twisted High-Tc van der Waals Josephson Junctions</strong>
+                    <ul class="research-points">
+                        <li>Demonstrated twist-angle dependent Superconducting Diode Effect up to 77 K in twisted Bi₂Sr₂CaCu₂O₈+δ heterostructures</li>
+                        <li>Optimized solvent-free cryogenic re-exfoliation method for fabricating pristine twisted junctions</li>
+                        <li>Worked with chemically-sensitive 2D materials including BSCCO, CrCl₃, NbSe₂, WTe₂, and MoTe₂</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="position">Research Assistant</div>
+                        <div class="institution">Materials Modelling Lab, KU Leuven • Prof. Michel Houssa</div>
+                    </div>
+                    <div class="date">Feb - Jul 2024</div>
+                </div>
+                <div class="description">
+                    <strong>Hubbard-Corrected DFT Calculations of 2D Vanadium Dihalides</strong>
+                    <ul class="research-points">
+                        <li>Performed DFT+U and phonon calculations on 2D vanadium dihalides (VX₂) to identify stable magnetic ground states</li>
+                        <li>Incorporated spin-orbit interaction to compute band structures and predict potential band inversion</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Publications</h2>
+            <div class="publications">
+                <div class="publication">
+                    <div class="pub-title">High-Temperature Josephson Diode</div>
+                    <div>S. Ghosh, V. Patil, A. Basu, Kuldeep, <strong>A. Dutta</strong>, et al.</div>
+                    <div class="pub-journal">Nature Materials 23, 612-618 (2024)</div>
+                </div>
+                
+                <div class="publication">
+                    <div class="pub-title">Dry Cryogenic Assembly of Chemically Sensitive van der Waals Heterostructures</div>
+                    <div>V. Patil, S. Ghosh, A. Basu, Kuldeep, <strong>A. Dutta</strong>, et al.</div>
+                    <div class="pub-journal">Scientific Reports 14, 11097 (2024)</div>
+                </div>
+                
+                <div class="publication">
+                    <div class="pub-title">Bilayer Vanadium Dioxide Thin Film with Elevated Transition Temperatures and High Resistance Switching</div>
+                    <div><strong>A. Dutta</strong>, P. Ashok, A. Verma</div>
+                    <div class="pub-journal">Journal of Applied Physics 134, 145306 (2023)</div>
+                </div>
+                
+                <div class="publication">
+                    <div class="pub-title">Stress in Single and Multi-Ribbon Complementary FETs (CFETs): Evolution in Process Flow and Impact on Drive Current</div>
+                    <div><strong>A. Dutta</strong>, G. Eneman, N. K. Thomas, P. Matagne, M. Radosavljević</div>
+                    <div class="pub-journal">IEEE Transactions on Electron Devices (in review)</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>Experimental Techniques</h3>
+                    <div class="skill-list">
+                        Photoluminescence (PL)<br>
+                        Second Harmonic Generation (SHG)<br>
+                        DC I-V Transport<br>
+                        Mechanical Exfoliation<br>
+                        Heterostructure Fabrication<br>
+                        Cryogenic Transfer
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Equipment</h3>
+                    <div class="skill-list">
+                        Cryostats<br>
+                        E-Beam Evaporation<br>
+                        AFM<br>
+                        Cleanroom Processes<br>
+                        Glovebox<br>
+                        Rapid Thermal Annealing
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Software & Simulation</h3>
+                    <div class="skill-list">
+                        TCAD (Sentaurus)<br>
+                        DFT (VASP & SIESTA)<br>
+                        Python<br>
+                        MATLAB<br>
+                        C/C++
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Awards & Recognition</h2>
+            <div class="awards">
+                <div class="award">
+                    <strong>Erasmus Mundus EU Scholarship</strong> - Full tuition waiver, stipend and travel grant (2023)
+                </div>
+                <div class="award">
+                    <strong>J N Tata Fellowship</strong> (2023)
+                </div>
+                <div class="award">
+                    <strong>ISSS National Research Award</strong> in Micro & Nano Systems, IISc Bangalore (2022)
+                </div>
+                <div class="award">
+                    <strong>Best Outgoing Student</strong>, Manipal Institute of Technology (2022)
+                </div>
+                <div class="award">
+                    <strong>Government of India BIRAC Start-Up Grant</strong> (2022)
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
